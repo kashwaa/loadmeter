@@ -22,7 +22,7 @@ function getStatus(id,width)
 					meter="medium";
 					break;
 				case "Images/c1.gif":
-					meter="loq";
+					meter="low";
 					break;
 				default:
 					meter="error";
