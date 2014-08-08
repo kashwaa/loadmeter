@@ -27,7 +27,7 @@ function getStatus(id,width)
 				default:
 					meter="error";
 			}
-			$('#'+id).html('<img src="'+meter+'.png" width="'+width+'" height="'+width+'"/>');
+			$('#'+id).html('<img src="http://kashwaa.github.io/loadmeter/'+meter+'.png" width="'+width+'" height="'+width+'"/>');
 			}
 	});
 }
