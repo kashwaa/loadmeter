@@ -1,0 +1,97 @@
+body {
+	font-family:"Gill Sans", "Gill Sans Std", "Gill Sans MT", sans-serif;
+	color:#000;
+	font-size:16px;
+	line-height:24px;
+	background:#F2F0FF;
+	margin:0;
+}
+
+a {
+color:#000;
+text-decoration:none;
+border-bottom:1px solid #D0C9FF;
+}
+a:hover {
+	background:#C9F8FF;
+}
+#container {
+	width:700px;
+	margin:0 auto;
+}
+#navigation {
+margin:24px 0;
+text-align:center;
+padding:0;
+}
+#navigation li {
+margin:0 10px;
+padding:0;
+display:inline;
+}
+#current {
+text-transform:uppercase;
+}
+#page-title {
+	margin:24px 0;
+	font-size:72px;
+	line-height:72px;
+	text-align:center;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+
+
+.entry-title {
+	margin:0;
+	font-size:48px;
+	line-height:48px;
+	text-align:center;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+.entry-title a {
+	border:0;
+}
+.meta {
+	margin:0;
+	font-size:14px;
+	text-align:center;
+	font-style:italic;
+}
+.meta a {
+	font-style:normal;
+}
+ul li {
+	list-style-type:square;
+}
+#content-about ul {
+	margin:0;
+	padding:0;
+}
+#content-about li {
+	margin:0 0 0 20px;
+	padding:0;
+	list-style:none;
+	width:220px;
+	float:left;
+}
+#content-about li.colbeg {
+	margin:0;
+	clear:left;
+}
+h2 {
+	font-size:24px;
+	font-weight:normal;
+	margin:0;
+	text-transform:uppercase;
+}
+#footer {
+padding:24px 0;
+text-align:center;
+font-size:14px;
+clear:both;
+}
+#power {
+    text-align:center;
+}
