@@ -1,2 +1,65 @@
-test 
-test 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>Egyptra load meter</title>
+	<link rel="stylesheet" href="css/stylesheet.css" type="text/css" media="screen" /> 
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="powermeter.js"></script>
+	<link rel="stylesheet" href="css/github.css">
+	<script src="js/highlight.pack.js"></script>
+
+	<script type="text/javascript">
+	hljs.initHighlightingOnLoad();
+	$(document).ready(function(){
+		powerMeter("power",150,30);
+	});
+	</script>
+</head>
+
+<body>
+
+
+<div id="container">
+
+<div id="head">
+<ul id="navigation">
+<li id="current"><a href="index.html">Home</a></li>
+<li><a href="powermeter.js">Download</a></li>
+<li>Github</li>
+</ul>
+<h1 id="page-title">Power network load meter</h1>
+</div>
+
+<div id="content-home">
+<div id="power"></div>
+<h2>What is it</h2>
+<p>A simple javascript file that extracts the current Egyptian power grid consumption status from <a href="http://egyptera.org/ar/">http://egyptera.org/ar/</a>
+that can be embedded into any webpage
+</p>
+<p>Inspired by <a href="http://power-grid-status.mos3abof.com"> Mosab Ahmad's project</a> </p>
+<h2>How to use</h2>
+<p>First, reference jquery in your page<br/>
+<pre><code>&lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js&quot;&gt;&lt;/script&gt;</code></pre> </p>
+<p>Then either download the <a href="powermeter.js">javascript file</a>, include it in your website and reference it in your page, or just add<br/>
+ <pre><code>&lt;script src=&quot;http://kashwaa.github.io/loadmeter/powermeter.js&quot;&gt;&lt;/script&gt;</code></pre></p>
+ <p>Add an empty div in your page where you want the meter to appear<br/>
+ <pre><code>&lt;div id=&quot;power&quot;&gt;&lt;/div&gt;</code></pre>
+ <p>Finally add a call to powerMeter function after your document is loaded</br>
+ powerMeter takes 3 arguments, the name of the div to display the meter in, the width of the meter and the refresh rate in seconds
+  <pre><code>
+  &lt;script type=&quot;text/javascript&quot;&gt;
+	$(document).ready(function(){
+		powerMeter(&quot;power&quot;,150,30);
+	});
+	&lt;/script&gt;
+  </code></pre></br>
+  This would put the meter in div "power", the meter will be 150 pixels wide and will refresh every 30 seconds
+  </p>
+ 
+</div>
+<div id="footer">Template designed by <a href="http://joshuagoodwin.com/">Joshua Camille Lee Goodwin</a>.</div>
+</div>
+
+</body>
+</html>
