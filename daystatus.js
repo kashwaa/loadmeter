@@ -14,7 +14,7 @@ function getDayStatus()
 		startDate.setHours(0);
 		startDate.setMinutes(0);
 		startDate.setSeconds(0);
-		for (index = 0; index < matches.length; ++index) {
+		for (index = 0;matches!=null && index < matches.length; ++index) {
 			var status="";
 			switch (matches[index])
 			{
